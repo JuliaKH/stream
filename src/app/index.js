@@ -22,11 +22,16 @@ if (program.inputFile) {
 
         if(program.encode) {
             text = c.Cipher.shift(fileContent, shift);
-            console.log(text);
         } else
         if(program.decode) {
             text = c.Cipher.shift(fileContent, -shift);
+        } else{
+            console.error('It must be specified --encode or --decode');
+            process.exit(1);
         }
+    } else {
+        console.error('Command --shift was not given!');
+        process.exit(1);
     }
 
     if(program.outputFile) {
