@@ -1,0 +1,17 @@
+{
+  "name": "caesar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "caesar-salad": "^2.1.0",
+    "commander": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app/index.js"
+  },
+  "author": "Julia",
+  "license": "ISC"
+}
